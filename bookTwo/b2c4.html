@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>fiveEyes</title>
+  <link rel="stylesheet"
+    type="text/css"
+    href="../CSS/chapters3.css" />
+    <link rel="stylesheet"
+      type="text/css"
+      href="../CSS/glitch.css" />
+  <link rel="icon"
+    href="../favicon.png" />
+
+  <script>
+    function w3IncludeHTML() {
+      var z, i, a, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        if (z[i].getAttribute("w3-include-html")) {
+          a = z[i].cloneNode(false);
+          file = z[i].getAttribute("w3-include-html");
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+              a.removeAttribute("w3-include-html");
+              a.innerHTML = xhttp.responseText;
+              z[i].parentNode.replaceChild(a, z[i]);
+              w3IncludeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <body onload="document.body.style.opacity='1'">
+    <nav id="navbar">
+      <img id ="icon" src="../favicon.png" />
+  <header id="special1">&lt;fiveEyes /&gt;</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c4.html">Ch_04.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c5.html">Ch_05.txt</a>
+    </li>
+    <header id="special">The Hacker's Handbook</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="b2c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c4.html">Ch_04.txt</a>
+    </li>
+<br />
+    <div id="nav-flex">
+      <div class="links vibrate-3">
+        <a class="links" href="../index.html">~/Home_</a>
+      </div>
+      <div class="links vibrate-3">
+        <a class="links" href="../about.html">~/About_</a>
+      </div>
+    </div>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><p class="book2" id="title">A Compilation</p></header>
+    <div class="article">
+    <article>
+
+      <p><span class="first">One of the biggest</span> reasons for creating this site was to bring a whole lot of information together. I'll admit that there's a plethora of available tutorials, videos, and even podcasts out there that have been great resources for myself and for others in the infosec community.</p>
+
+      <p>Here, I wanted to collect a list of all the best resources I've found so far. What I'm including is for all levels of understanding from the unexperienced n00b to the employed professional.</p>
+
+      <hr class="sexy_line" />
+      <h2>Blogs & Magazines</h2>
+      <hr class="sexy_line" />
+
+      <h3>GeeksforGeeks <a href="https://www.geeksforgeeks.org/">[link]</a></h3>
+      <p>Their description: "A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions."</p>
+
+      <h3>CSOnline <a href="https://www.csoonline.com/">[link]</a></h3>
+      <p>Their description: "CSO serves enterprise security decision-makers and users with the critical information they need to stay ahead of evolving threats and defend against criminal cyberattacks. With incisive content that addresses all security disciplines from risk management to network defense to fraud and data loss prevention, CSO offers unparalleled depth and insight to support key decisions and investments for IT security professionals."</p>
+
+      <h3>edureka! <a href="https://www.edureka.co/">[link]</a></h3>
+      <p>Their description: "Edureka is an online training provider with the most effective learning system in the world. We help professionals learn trending technologies for career growth."</p>
+
+      <h3>CISO Mag <a href="https://www.cisomag.com/">[link]</a></h3>
+      <p>Their description: "Infosecurity Magazine is the award winning online magazine dedicated to the strategy, insight and technology of information security."</p>
+
+      <h3>Dark Reading <a href="https://www.darkreading.com/">[link]</a></h3>
+      <p>Their description: "Cyber security's comprehensive news site is now an online community for security professionals, outlining cyber threats and the technologies for defending against them."</p>
+
+      <hr class="sexy_line" />
+      <h2>YouTube Channels</h2>
+      <hr class="sexy_line" />
+
+      <h3>Security & Compliance Weekly</h3>
+      <p>Weekly videos with a focus in information security.</p>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/trPEJui2KUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h3>SecureNinjaTV</h3>
+      <p>SecureNinjaTV covers a wide range of Cybersecurity industry conferences, events and trade shows each year.</p>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dnRVXZeuJNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h3>Null Byte</h3>
+      <p>Great channel for tutorials with easy-to-follow instructions.</p>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Hl0IpoS503A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h3>Computerphile</h3>
+      <p>An interesting format of informational storytelling.</p>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ciNHn38EyRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <hr class="sexy_line" />
+      <h2>Podcasts</h2>
+      <hr class="sexy_line" />
+
+      <h3>WIRED Tech in Two</h3>
+      <p>A great podcast for general updates into the tech community. Sometimes they'll cover data breaches or highlight stories in the infosec community. Easy to follow. Great for beginners.</p>
+      <iframe src="https://open.spotify.com/embed-podcast/show/0SH5lhsW8vV6OgmrXRQXAD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+      <h3>Darknet Diaries</h3>
+      <p>Awesome content by an awesome interviewer. Engaging stories with a focus on cyber crime. Great for any level.</p>
+      <iframe src="https://open.spotify.com/embed-podcast/show/4XPl3uEEL9hvqMkoZrzbx5" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+    </article>
+  </div>
+    </section>
+</main>
+</body>
+<footer>
+  <div w3-include-html="licenseSSI.html"></div>
+  <script>
+    w3IncludeHTML();
+  </script>
+  </footer>
+</html>

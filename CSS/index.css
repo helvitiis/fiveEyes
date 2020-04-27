@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Francois+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Play:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+html
+{
+  padding: 0;
+  margin: 0;
+}
+
+body
+{
+  background-color: #232325;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+ div#pc
+ {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+h1
+{
+  color: black;
+  font-size: 50px;
+  font-family: "Zilla Slab Highlight", cursive;
+  text-align: center;
+  color: #d94800;
+}
+
+h1.secondary
+{
+  color: black;
+  font-size: 50px;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d94800;
+}
+
+h1.title
+{
+  font-family: "Zilla Slab Highlight", cursive;
+  font-size: 120px;
+}
+
+h1#title2 { color: #26b7ff; }
+
+h2
+{
+  font-size: 35px;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  padding: 5%;
+}
+
+h3
+{
+  font-size: 55px;
+  text-transform: lowercase;
+  font-family: "Zilla Slab Highlight", cursive;
+  text-align: center;
+}
+
+h4
+{
+  font-size: 35px;
+  font-family: "Courier Prime", monospace;
+  text-align: center;
+  text-transform: uppercase;
+  color: yellow;
+}
+
+div.chap
+{
+  padding: 0 5%;
+}
+
+p
+{
+  font-family: "Georgia", fixed-wdth;
+  font-size: 17px;
+  line-height: 2;
+  color: #6c6c6c;
+  text-align: justify;
+}
+
+span.first
+{
+  font-family: "Play", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+div.titlediv
+{
+  padding: 0.5% 5% 0;
+}
+
+a
+{
+  font-family: "PT Mono", monospace;
+  color: #d94800;
+}
+
+.pulsebutton
+{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.blinking
+{
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText
+{
+  0% {color: yellow;}
+  49% {color: yellow;}
+  60% {color: transparent;}
+  99% {color: transparent;}
+  100% {color: yellow;}
+}
+
+.pulsebutton:hover
+{
+  animation: pulsebutton 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulsebutton
+{
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1);}
+}
+
+div.chapters{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.break
+{
+  flex-basis: 100%;
+  height: 55px;
+}
+
+a.pb
+{
+  width: 100px;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+  margin-top: 30px;
+  text-align: center;
+  color: #d94800;
+  text-decoration: none;
+  font-size:20px;
+}
+
+#license
+{
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 50px;
+  font-family: "PT Mono", monospace;
+  font-size: 12px;
+  color: #6c6c6c;
+}

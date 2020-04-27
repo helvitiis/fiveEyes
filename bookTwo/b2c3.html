@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>fiveEyes</title>
+  <link rel="stylesheet"
+    type="text/css"
+    href="../CSS/chapters2.css" />
+    <link rel="stylesheet"
+      type="text/css"
+      href="../CSS/glitch.css" />
+  <link rel="icon"
+    href="../favicon.png" />
+
+  <script>
+    function w3IncludeHTML() {
+      var z, i, a, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        if (z[i].getAttribute("w3-include-html")) {
+          a = z[i].cloneNode(false);
+          file = z[i].getAttribute("w3-include-html");
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+              a.removeAttribute("w3-include-html");
+              a.innerHTML = xhttp.responseText;
+              z[i].parentNode.replaceChild(a, z[i]);
+              w3IncludeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <body onload="document.body.style.opacity='1'">
+    <nav id="navbar">
+      <img id ="icon" src="../favicon.png" />
+  <header id="special1">&lt;fiveEyes /&gt;</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c4.html">Ch_04.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c5.html">Ch_05.txt</a>
+    </li>
+    <header id="special">The Hacker's Handbook</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="b2c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c4.html">Ch_04.txt</a>
+    </li>
+<br />
+    <div id="nav-flex">
+      <div class="links vibrate-3">
+        <a class="links" href="../index.html">~/Home_</a>
+      </div>
+      <div class="links vibrate-3">
+        <a class="links" href="../about.html">~/About_</a>
+      </div>
+    </div>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><p class="book2" id="title">Kali Linux for Beginners</p></header>
+    <div class="article">
+      <article>
+
+
+        <p><span class="first">The first step to</span> using Kali Linux is creating a space that you can run the operating system in. One of the best ways to do this is through a virtual machine.</p>
+
+        <p>A virtual machine is a computer inside of a computer.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0">[1]</a></sup> Basically, you can download an operating system file from the internet and run it locally using a program. The reason this is an excellent way to run Kali is because the machine is isolated or "sandboxed" from the computer that's running it, meaning that anything that's done in the virtual machine won't alter the host computer.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0">[2]</a></sup> This is also an excellent choice for beginners because it reduces the chance of corrupting your main computer's system. However, if you prefer to simply install it onto a computer (possibly as a <a href"">dual boot</a>) then you can navigate to Kali's website and follow the instructions listed there.</p>
+
+        <h2>Installing VirtualBox</h2>
+
+        <p>First, we'll need to install a program called VirtualBox that will act as our virtual machine host. Navigate to the <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox website downloads page</a> and click on the appropriate version of the program for your current operating system. I'm running on a Mac, so I'll choose the "OS X hosts" option in the list.</p>
+
+        <img src="../images/c3i1.png"/>
+
+        <p>Download the file. Once it's downloaded, go ahead and open the file and install it onto your computer in the location you want to store the program and all of its files into.</p>
+
+        <h2>Downloading Kali Linux</h2>
+
+        <p>While that's downloading, you'll want to navigate to the <a href="https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/">Kali Linux virtual images</a> page. This page hosts several images or files that contain the operating system which will be read by VirtualBox. The file you will need to download is the one circled in the image below.</p>
+
+        <img src="../images/c3i2.png"/>
+
+        <p>Once both VirtualBox and your Kali Linux image are downloaded, you should check the hash listed on the Kali Linux website to check the validity of the image you have downloaded. This makes sure the file hasn't been altered or tampered with, and a great guide on how to do this can be found <a href="https://proprivacy.com/guides/how-why-and-when-you-should-hash-check#how-to-hash-check">here.</a></p>
+
+        <p>For example, the hash value of my image looks like this:</p>
+
+        <code>6e138bf85636f5fd14061e5e425695dd90882190562ceb8fc4dbb277e5e4f5a2</code>
+
+        <p>Once you've checked your hash values, you'll need to install VirtualBox onto your computer. This is what it should look like once you've finished:</p>
+
+        <img src="../images/c3i3.png"/>
+
+        <p>If it doesn't look exactly like this, that's okay. However, it should look similar. You'll also want to unzip your Kali Linux file once it's finished downloading before going further. Don't worry if this step takes a while.</p>
+
+        <p>The next step is to click the Import button in the navigation bar. This is where you'll need to navigate to the location that you saved your Kali Linux file in. The file extension should be in .ova format.</p>
+
+        <img src="../images/c3i4.png"/>
+
+        <p>When you add the file to VirtualBox, click <span class="rando">Import</span> at the bottom. You don't need to change anything on the next page. Click continue and wait a little while for VirtualBox to load the configuration settings and create a virtual machine.</p>
+
+        <p>You should now have a window that looks like the image below. If you don't, repeat the steps listed above.</p>
+
+        <img src="../images/c3i5.png"/>
+
+        <h2>Launching Kali Linux</h2>
+
+        <p>Click on the button that says <span class="rando">Start.</span> If you get an error like the image below, navigate to Settings > Ports > USB 1.1 and click OK.</p>
+
+        <img src="../images/c3i6.png"/>
+
+        <p>Allow the virtual machine to boot up. It should only take a few seconds. Once you reach the login screen, you can use the credentials kali/kali to log in. This is the default login and you may choose to change these credentials if you would prefer more security.</p>
+
+        <img src="../images/c3i7.png"/>
+
+        <p>Here's the first look at your Desktop. If you see this, congratulations! You've successfully installed Kali Linux!</p>
+
+        <img src="../images/c3i8.png"/>
+
+        <h2>Navigating Kali Linux</h2>
+
+        <p>One of the first things you should do is familiarize yourself with the Kali Linux desktop environment. Kali is a UN*X operating system, and if you've used another Linux operating system or even OS X, you're probably going to find some similarities in Kali.</p>
+
+        <p>One of the most important applications on Kali Linux is the Terminal. If you've never used or even seen a Terminal before, that's okay! They're easy to use and tend to be quicker than using a GUI (Graphical User Interface). The difference between a GUI and the Terminal is that there are no buttons to click--you simply type out commands and run them all in one spot. You can find the Terminal in the top taskbar.</p>
+
+        <img src="../images/c3i9.png"/>
+
+        <p>Next, navigate to the icon on the top left corner. This is where you can access all of your tools easily. </p>
+
+        <img src="../images/c3i10.png"/>
+
+        <p>Kali has so many tools available, it would be impossible to list all of them and what they do here. A good place to explore would be Kali's <a href="https://tools.kali.org/tools-listing">Official Documentation</a> page. Here, it's easy to click each link and read about what the program is and what it's used for.</p>
+
+        <p>The applications available are seperated into 13 categories, each with a different purpose: Information Gathering, Vulnerability Analysis, Web Application Analysis, Database Assessment, Password Attacks, Wireless Attacks, Reverse Engineering, Exploitation Tools, Sniffing and Spoofing, Post Exploitation, Forensics, Reporting Tools, and Social Engineering Tools. Many of these are self-explanitory, but I'll explain what some of the less obvious categories are.</p>
+
+        <p>NOTE: Remember that hacking is illegal without consent. Always make sure to obtain full consent of a person or group of people who own the system or systems you wish to test on. If you'd like to test on your own system, I recommend creating another virtual machine--you can run two or more at once on any computer, or you can purchase a cheap computer to run on your network and test that way. Do be sure that you're okay with potentially destroying or corrupting that machine when starting out (this is why I recommend using a virtual machine as these can be replaced easily).</p>
+
+        <h3>Information Gathering <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_information_gathering_tools.htm">&#8599;</a></h3>
+        <p>This one's pretty self-explanatory. This set of tools allows the user to gain knowledge about a system or set of systems, website, or other data point in order to test it.</p>
+
+        <h3>Vulnerability Analysis <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_vulnerability_analyses_tools.htm">&#8599;</a></h3>
+        <p>This toolset is geared toward assessing and mitigating vulnerabilities in a system. There are three main classes of vulnerabilities: design vulnerabilities, implementation vulnerabilities, and operational vulnerabilities.</p>
+
+        <h3>Wireless Attacks <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_wireless_attacks.htm">&#8599;</a></h3>
+        <p>Kind of explanitory, these tools can be used to launch or help to assist wireless attacks against a target system.</p>
+
+        <h3>Website Penetration <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_website_penetration_testing.htm">&#8599;</a></h3>
+        <p>This is a great place to start if a user wishes to become a Bug Bounty Hunter. These tools can be used to collect information on a website and to find vulnerabilities.</p>
+
+        <h3>Exploitation Tools <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_exploitation_tools.htm">&#8599;</a></h3>
+        <p>This set of tools allows the Kali Linux user to attack systems and exploit passwords, for example. This is really where Kali shines.</p>
+
+
+        <h3>Forensics Tools <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_forensics_tools.htm">&#8599;</a></h3>
+        <p>The forensics tools installed on Kali Linux allow the user to delve into information they have garnered from a target.</p>
+
+        <h3>Social Engineering <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_social_engineering.htm">&#8599;</a></h3>
+        <p>Social engineering is the psychological manipulation of a person or multiple people into performing a task or tasks. Utilizing this toolset will allow the Kali Linux user to gain information that they otherwise would not be able to gain (such as confidential information).</p>
+
+        <h3>Stressing Tools <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_stressing_tools.htm">&#8599;</a></h3>
+        <p>This set of tools is used for testing a system or group of systems' stability. It pushes to boundaries of a system's capacity for handling traffic, for example. It can also be used for testing the availability of a system.</p>
+
+        <h3>Sniffing & Spoofing <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_sniffing_and_spoofing.htm">&#8599;</a></h3>
+        <p>Sniffing is finding services that can be exploited. Spoofing is used to disguise an IP address so that network traffic is re-routed. Together, they can be used to cause a man-in-the-middle attack, for example. These are great to learn so that they can be prevented.</p>
+
+        <h3>Password Cracking <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_password_cracking_tools.htm">&#8599;</a></h3>
+        <p>Pretty straight-forward. These tools are used for breaking into systems with cracked passwords.</p>
+
+        <h3>Maintaining Access <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_maintaining_access.htm">&#8599;</a></h3>
+        <p>Also straightforward. These tools allow a user to maintain access to a hacked system.</p>
+
+        <h3>Reverse Engineering <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_reverse_engineering.htm">&#8599;</a></h3>
+        <p>Using these tools a user can take a program and reverse it, allowing the user to see what's inside.</p>
+
+        <h3>Reporting Tools <a href="https://www.tutorialspoint.com/kali_linux/kali_linux_reporting_tools.htm">&#8599;</a></h3>
+        <p>A report can be generated after a series of tests have been performed. These are useful for law enforcement or a systematic approach where a user has been hired to perform testing and is required to submit results.</p>
+
+        <p>Now that you're familiar with what these tools are made for, go ahead and follow the tutorials that are listed by each category head (click the blue arrow). Good luck and have fun!</p>
+
+        <br />
+        <hr />
+        <p>REFERENCES</p>
+        <div>
+          <ol class="references">
+            <li id="cite_note-0"><span class="mw-cite-backlink"><b><a href="#cite_ref-0">^</a></b></span>
+              <span class="reference-text"><i>Microsoft. <a href="https://azure.microsoft.com/en-us/overview/what-is-a-virtual-machine/">What is a virtual machine?</a></i></span></li>
+          </ol>
+        </div>
+      </div>
+      </div>
+      </article>
+  </div>
+    </section>
+</main>
+</body>
+<footer>
+  <div w3-include-html="licenseSSI.html"></div>
+  <script>
+    w3IncludeHTML();
+  </script>
+  </footer>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>fiveEyes</title>
+  <link rel="stylesheet"
+    type="text/css"
+    href="../CSS/chapters2.css" />
+    <link rel="stylesheet"
+      type="text/css"
+      href="../CSS/glitch.css" />
+  <link rel="icon"
+    href="../favicon.png" />
+
+  <script>
+    function w3IncludeHTML() {
+      var z, i, a, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        if (z[i].getAttribute("w3-include-html")) {
+          a = z[i].cloneNode(false);
+          file = z[i].getAttribute("w3-include-html");
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+              a.removeAttribute("w3-include-html");
+              a.innerHTML = xhttp.responseText;
+              z[i].parentNode.replaceChild(a, z[i]);
+              w3IncludeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <body onload="document.body.style.opacity='1'">
+    <nav id="navbar">
+      <img id ="icon" src="../favicon.png" />
+  <header id="special1">&lt;fiveEyes /&gt;</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c4.html">Ch_04.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c5.html">Ch_05.txt</a>
+    </li>
+    <header id="special">The Hacker's Handbook</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="b2c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c4.html">Ch_04.txt</a>
+    </li>
+<br />
+    <div id="nav-flex">
+      <div class="links vibrate-3">
+        <a class="links" href="../index.html">~/Home_</a>
+      </div>
+      <div class="links vibrate-3">
+        <a class="links" href="../about.html">~/About_</a>
+      </div>
+    </div>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><p class="book2" id="title">The Beginning of Something</p></header>
+    <div class="article">
+    <article>
+
+      <p><span class="first">Have you ever watched</span> a movie with a "hacking" scene and thought wow, that's completely inaccurate? You were probably right. The aesthetics of hacking and hackers strays far from the </p>
+
+      <p></p>
+
+      <p>First, it’s important to get a grasp on what a hacker is and what a hacker isn’t. Here’s a list of the "most common" definitions of a hacker, taken from Logik Bomb’s Hacker Encyclopedia<sup id="cite_ref-0" class="reference"><a href="#cite_note-0">[1]</a></sup>:</p>
+      <div id="def">
+        <ol id="def">
+        <li>Any computer user. It drives everyone else crazy when anyone refers to a novice user as a "hacker."</li>
+        <li>A computer user who spends a lot of time on the system with an almost fetishistic approach. Usually refers to someone who knows a lot about computers, even if they are not a programmer.</li>
+        <li>Any user of an online service, such as CompuServe, AOL or the Internet. That's another sort of annoying one, since just because some businessman goes on AOL to send email to grandma, that does not mean he is a hacker.</li>
+        <li>A programmer.</li>
+        <li>A computer user who uses his skills unlawfully in any matter, usually to "break into" another system through a network.</li>
+        <li>A master programmer capable of things that seem "magical." (All of these are from the Massachusetts Institute of Technology's programmers in the 1960s, who called themselves "hackers," to refer to making a program better and more efficient, or
+          making it do something it was not originally intended to do. The media overused this to an incredible extent, which added all the other definitions.)</li>
+      </ol>
+    </div>
+      <p>If you ask any information security professional what this term means to them, whether or not they consider themselves to be one, they will always have a different answer. Although the term "hacker" and its aesthetic has been tossed around in movies, video games, books, comics, and even music, the more appropriate term for a real-life "hacker" would be an information security professional.</p>
+      <p>The field of information security is <a href="https://www.cybersecurityeducation.org/careers/">incredibly broad</a> and can range from engineers to analysts and security officers to security consultants, but in the end it really boils down to one thing: making sure data is kept safe from unauthorized use. In essense, the opposite of hacking.</p>
+
+      <p>So then why bring up infosec at all? Well, there's actually a part of the community that deals with hacking--and it's called pen testing.</p>
+
+      <p>Ethical hacking or penetration testing is a term that's used by the infosec community to denote an individual who specializes or posesses a skillset that utilizes the ability to break into systems--with permission. Roger Grimes, an infosec professional with over 30 years of experience, writes:</p>
+
+      <p>"From the penetration tester's point of view, there is no downside: If you hack in past the current defenses, you’ve given the client a chance to close the hole before an attacker discovers it. If you don’t find anything, your client is even happier because they now get to declare their systems 'secure enough that even paid hackers couldn’t break into it.' Win-win!"<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[2]</a></sup></p>
+
+      <p>The EC-Council, best known for their Certificated Ethical Hacker (CEH) exam, has an excellent code of ethics that ethical hackers should follow.</p>
+
+      <div id="ethics">
+        <h3 id="ethics">The EC-Council's Code of Ethics for Ethical Hackers</h3>
+      <ol id="ethics">
+        <li>Keep private and confidential information gained in your professional work, (in particular as it pertains to client lists and client personal information). Not collect, give, sell, or transfer any personal information (such as name, e-mail address, Social Security number, or other unique identifier) to a third party without client prior consent.</li>
+        <li>Protect the intellectual property of others by relying on your own innovation and efforts, thus ensuring that all benefits vest with its originator.</li>
+        <li>Disclose to appropriate persons or authorities potential dangers to any ecommerce clients, the Internet community, or the public, that you reasonably believe to be associated with a particular set or type of electronic transactions or related software or hardware.</li>
+        <li>Provide service in your areas of competence, being honest and forthright about any limitations of your experience and education. Ensure that you are qualified for any project on which you work or propose to work by an appropriate combination of education, training, and experience.</li>
+        <li>Never knowingly use software or process that is obtained or retained either illegally or unethically.</li>
+        <li>Not to engage in deceptive financial practices such as bribery, double billing, or other improper financial practices.</li>
+        <li>Use the property of a client or employer only in ways properly authorized, and with the owner’s knowledge and consent.</li>
+        <li>Disclose to all concerned parties those conflicts of interest that cannot reasonably be avoided or escaped.</li>
+        <li>Ensure good management for any project you lead, including effective procedures for promotion of quality and full disclosure of risk.</li>
+        <li>Add to the knowledge of the e-commerce profession by constant study, share the lessons of your experience with fellow EC-Council members, and promote public awareness of benefits of electronic commerce.</li>
+        <li>Conduct oneself in the most ethical and competent manner when soliciting professional service or seeking employment, thus meriting confidence in your knowledge and integrity.</li>
+        <li>Ensure ethical conduct and professional care at all times on all professional assignments without prejudice.</li>
+        <li>Not to neither associate with malicious hackers nor engage in any malicious activities.</li>
+        <li>Not to purposefully compromise or allow the client organization’s systems to be compromised in the course of your professional dealings.</li>
+        <li>Ensure all penetration testing activities are authorized and within legal limits.</li>
+        <li>Not to take part in any black hat activity or be associated with any black hat community that serves to endanger networks.</li>
+        <li>Not to be part of any underground hacking community for purposes of preaching and expanding black hat activities.</li>
+        <li>Not to make inappropriate reference to the certification or misleading use of certificates, marks or logos in publications, catalogues, documents or speeches.</li>
+        <li>Not convicted in any felony or violated any law of the land.</li>
+      </ol>
+    </div>
+    <p>If this sounds like something you'd like to explore further, you're in the right place! The next few chapters will give you a great starting point for jumping into the infosec community.</p>
+      <hr />
+      <p>REFERENCES</p>
+      <div>
+        <ol class="references">
+          <li id="cite_note-0"><span class="mw-cite-backlink"><b><a href="#cite_ref-0">^</a></b></span>
+            <span class="reference-text"><i>"Logik Bomb." (1997). <a href="https://insecure.org/stf/hackenc.txt">Hacker's Encyclopedia</a></i></span></li>
+          <br />
+          <li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span>
+            <span class="reference-text"><i>Grimes, Roger A. (27 Feb 2019).<a href="https://www.csoonline.com/article/3238128/what-is-ethical-hacking-and-how-to-become-an-ethical-hacker.html"
+                  title="Three Laws">What is ethical hacking? How to get paid to break into computers</a></i></span></li>
+        </ol>
+      </div>
+  </div>
+  </div>
+    </article>
+  </div>
+    </section>
+</main>
+</body>
+<footer>
+  <div w3-include-html="licenseSSI.html"></div>
+  <script>
+    w3IncludeHTML();
+  </script>
+  </footer>
+</html>

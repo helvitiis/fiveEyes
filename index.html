@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>fiveEyes</title>
+	<link rel="stylesheet"
+		type="text/css"
+		href="CSS/index.css" />
+	<link rel="icon"
+		href="favicon.png" />
+	<script src="blink.js" /> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		function w3IncludeHTML() {
+			var z, i, a, file, xhttp;
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				if (z[i].getAttribute("w3-include-html")) {
+					a = z[i].cloneNode(false);
+					file = z[i].getAttribute("w3-include-html");
+					var xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function() {
+						if (xhttp.readyState == 4 && xhttp.status == 200) {
+							a.removeAttribute("w3-include-html");
+							a.innerHTML = xhttp.responseText;
+							z[i].parentNode.replaceChild(a, z[i]);
+							w3IncludeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					return;
+				}
+			}
+		}
+	</script>
+</head>
+<div id="pc">
+
+	<body onload="document.body.style.opacity='1'">
+		<div class="titlediv">
+			<h1 class="title">&lt;fiveEyes /&gt;</h1>
+			<h1 class="secondary">A Millenial's Guide to Surviving Surveillence in the 21st Century</h1>
+			<h1></h1>
+		</div>
+		<br />
+		<div class="chap"
+			id="section2">
+			<p><span class="first">Intelligence collection and surveillance</span>  are more relevant than ever—there’s a reason the “FBI man” meme was so popular. But what really happens when services like the FBI, NSA, and CIA really flag our search history? What tech gadgets do they use to spy on us? What the hell is “Five Eyes?” And should I really be concerned about checking out that book on How to Blow Up Anything from the library? (Yes.) I’ve written a techie love letter to all you people who don’t care about their digital footprint and have never changed their password from 123456. You know who you are. This is less of a dry straight-to-the-facts narrative and more of a spy-thriller-turned-horror that I hope can captivate even the least tech-educated reader. Main characters include Edward Snowden (NSA leaks) and Chelsea Manning (WikiLeaks).</p>
+		</div>
+		<div>
+			<br />
+			<!-- CHAPTERS -->
+			<h4>~fiveEyes/Chapters<span class="blinking">_</span></h4>
+			<div class="chapters">
+				<div class="pulsebutton">
+					<a href="bookOne/b1c1.html"
+						class="pb">Ch_01</a>
+				</div>
+				<div class="pulsebutton">
+					<a href="bookOne/b1c2.html"
+						class="pb">Ch_02</a>
+				</div>
+				<div class="pulsebutton">
+					<a href="bookOne/b1c3.html"
+						class="pb">Ch_03</a>
+				</div>
+				<div class="pulsebutton">
+					<a href="bookOne/b1c4.html"
+						class="pb">Ch_04</a>
+				</div>
+				<div class="break"></div>
+				<div class="pulsebutton">
+					<a href="bookOne/b1c5.html"
+						class="pb">Ch_05</a>
+				</div>
+				<div class="pulsebutton">
+					<a href="#section6"
+						class="pb"></a>
+				</div>
+				<div class="pulsebutton">
+					<a href="#section7"
+						class="pb"></a>
+				</div>
+				<div class="pulsebutton">
+					<a href="#section8"
+						class="pb"></a>
+				</div>
+			</div>
+			<!-- END CHAPTERS -->
+			<br />
+			<div class="titlediv">
+				<h1 id="title2"
+					class="title">i.spy</h1>
+				<h1 id="title2"
+					class="secondary">The Hacker's Handbook</h1>
+				<h1></h1>
+			</div>
+			<br />
+			<br />
+			<div class="chap"
+				id="section2">
+				<p><span class="first">Less of a narrative</span> and more of a how-to manual, I explore what it means to be a "hacker" and how you can learn the tools of the trade. Even if you aren't interested in hacking, you can still learn a thing or two about privacy.</p>
+				<p>The structure of this information is easy to read and geared toward the absolute beginner. It's recommended that you read the last chapter of book one before reading ahead.</p>
+			</div>
+			<!-- CHAPTERS -->
+			<h4>~/hackersHandbook/Chapters<span class="blinking">_</span></h4>
+			<div class="chapters">
+				<div class="pulsebutton">
+					<a href="bookTwo/b2c1.html"
+						class="pb">Ch_01</a>
+				</div>
+				<div class="pulsebutton">
+					<a href="bookTwo/b2c2.html"
+						class="pb">Ch_02</a>
+				</div>
+				<div class="pulsebutton">
+					<a href="bookTwo/b2c3.html"
+						class="pb">Ch_03</a>
+				</div>
+				<div class="pulsebutton">
+					<a href="bookTwo/b2c4.html"
+						class="pb">Ch_04</a>
+				</div>
+				<div class="break"></div>
+				<div class="pulsebutton">
+					<a href="#section5"
+						class="pb"></a>
+				</div>
+				<div class="pulsebutton">
+					<a href="#section6"
+						class="pb"></a>
+				</div>
+				<div class="pulsebutton">
+					<a href="#section7"
+						class="pb"></a>
+				</div>
+				<div class="pulsebutton">
+					<a href="#section8"
+						class="pb"></a>
+				</div>
+			</div>
+			<!-- END CHAPTERS -->
+		</div>
+</div>
+<div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</div>
+<div w3-include-html="licenseSSI.html"></div>
+<script>
+	w3IncludeHTML();
+</script>
+</body>
+
+</html>

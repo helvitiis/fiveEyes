@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>fiveEyes</title>
+  <link rel="stylesheet"
+    type="text/css"
+    href="CSS/chapters2.css" />
+    <link rel="stylesheet"
+      type="text/css"
+      href="CSS/glitch.css" />
+  <link rel="icon"
+    href="favicon.png" />
+
+  <script>
+    function w3IncludeHTML() {
+      var z, i, a, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        if (z[i].getAttribute("w3-include-html")) {
+          a = z[i].cloneNode(false);
+          file = z[i].getAttribute("w3-include-html");
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+              a.removeAttribute("w3-include-html");
+              a.innerHTML = xhttp.responseText;
+              z[i].parentNode.replaceChild(a, z[i]);
+              w3IncludeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <body onload="document.body.style.opacity='1'">
+    <nav id="navbar">
+      <img id ="icon" src="favicon.png" />
+  <header id="special1">&lt;fiveEyes /&gt;</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="bookOne/b1c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="bookOne/b1c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="bookOne/b1c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="bookOne/b1c4.html">Ch_04.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="bookOne/b1c5.html">Ch_05.txt</a>
+    </li>
+    <header id="special">The Hacker's Handbook</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="bookTwo/b2c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="bookTwo/b2c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="bookTwo/b2c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="bookTwo/b2c4.html">Ch_04.txt</a>
+    </li>
+<br />
+    <div id="nav-flex">
+      <div class="links vibrate-3">
+        <a class="links" href="../index.html">~/Home_</a>
+      </div>
+      <div class="links vibrate-3">
+        <a class="links" href="../about.html">~/About_</a>
+      </div>
+    </div>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><p class="about" id="title">About</p></header>
+    <div class="article">
+    <article>
+      <img class="portrait" src="images/portrait.png"/>
+
+      <p>When I first started getting into computers, I was pretty young. I used to spend hours sitting in front of the screen straining my eyes playing simple Windows Vista games and playing around in Microsoft Paint. Now that I've completed my undergraduate degree, I've been part of the infosec community on Twitter for nearly two years and joined countless Reddit communities which have inspired me to learn as much as I possibly could.</p>
+
+      <p>Unfortunately, I didn't find many places where I could find all of the information I wanted in one location--I would fall into poorly written articles or mute YouTube videos with awful stock music taking away the focus.</p>
+
+      <p>fiveEyes is the result of two different capstone projects combined, one for English writing and the other for Information Technology. Although I've finished my course of study, I hope to continue to add information to this site in the future and expand it to become a viable resource for beginners and newbies to the infosec community.</p>
+      <hr />
+      <h2>ABOUT THE AUTHOR</h2>
+      <p>Aaron is a newly graduated college grad (class of 2020) from the University of Pittsburgh with a degree in Technology Journalism, BS with a focus in Computer Science and Information Technology. He also holds a Digital Studies certificate for the work he has done in the Digital Humanities field. He's hosted a panel at the University of Pittsburgh about environmental engineering technology and given talks at Carnegie Mellon University for his work in the Digital Humanities. You can find him on <a href="https://github.com/quantum-satire">GitHub</a> and <a href="https://twitter.com/cypherponk">Twitter</a>. You can also purchase a physical copy of the first book, "I Spy With My Five Eyes: A Millennial’s Guide to Surviving Modern Surveillance" on <a href="https://www.amazon.com/Spy-Five-Eyes-Millennials-Surveillance/dp/179885726X">Amazon</a>.</p>
+  </div>
+  </div>
+    </article>
+  </div>
+    </section>
+</main>
+</body>
+<footer>
+  <div w3-include-html="licenseSSI.html"></div>
+  <script>
+    w3IncludeHTML();
+  </script>
+  </footer>
+</html>

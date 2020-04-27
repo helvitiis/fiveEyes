@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>fiveEyes</title>
+  <link rel="stylesheet"
+    type="text/css"
+    href="../CSS/chapters2.css" />
+    <link rel="stylesheet"
+      type="text/css"
+      href="../CSS/glitch.css" />
+  <link rel="icon"
+    href="../favicon.png" />
+
+  <script>
+    function w3IncludeHTML() {
+      var z, i, a, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        if (z[i].getAttribute("w3-include-html")) {
+          a = z[i].cloneNode(false);
+          file = z[i].getAttribute("w3-include-html");
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+              a.removeAttribute("w3-include-html");
+              a.innerHTML = xhttp.responseText;
+              z[i].parentNode.replaceChild(a, z[i]);
+              w3IncludeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <body onload="document.body.style.opacity='1'">
+    <nav id="navbar">
+      <img id ="icon" src="../favicon.png" />
+  <header id="special1">&lt;fiveEyes /&gt;</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c4.html">Ch_04.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookOne/b1c5.html">Ch_05.txt</a>
+    </li>
+    <header id="special">The Hacker's Handbook</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="b2c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b2c4.html">Ch_04.txt</a>
+    </li>
+<br />
+    <div id="nav-flex">
+      <div class="links vibrate-3">
+        <a class="links" href="../index.html">~/Home_</a>
+      </div>
+      <div class="links vibrate-3">
+        <a class="links" href="../about.html">~/About_</a>
+      </div>
+    </div>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><p class="book2" id="title">What is Kali Linux?</p></header>
+    <div class="article">
+      <article>
+
+        <p><span class="first">When was the first</span> text.</p>
+        <p>First, it’s important to get a grasp on what a hacker is and what a hacker isn’t. Here’s a list of the "most common" definitions of a hacker, taken from Logik Bomb’s Hacker Encyclopedia<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup>:</p>
+
+        <P>In order to understand ethical hacking, it's necessary to use the tools that are considered industry standard. In the next chapter, I'll outline how to download and use some simple tools on Kali Linux.</p>
+        <hr />
+        <p>REFERENCES</p>
+        <div>
+          <ol class="references">
+            <li id="cite_note-0"><span class="mw-cite-backlink"><b><a href="#cite_ref-0">^</a></b></span>
+              <span class="reference-text"><i>Aryya, Paul. (20 Dec 2019). <a href="https://www.edureka.co/blog/ethical-hacking-using-kali-linux/">Everything You Need To Know About Kali Linux</a></i></span></li>
+            <br />
+            <li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span>
+              <span class="reference-text"><i><a href="https://www.auburn.edu/~vestmon/robotics.html"
+                    title="Three Laws">Isaac Asimov's "Three Laws of Robotics"</a></i></span></li>
+          </ol>
+        </div>
+      </div>
+      </div>
+      </article>
+  </div>
+    </section>
+</main>
+</body>
+<footer>
+  <div w3-include-html="licenseSSI.html"></div>
+  <script>
+    w3IncludeHTML();
+  </script>
+  </footer>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>fiveEyes</title>
+  <link rel="stylesheet"
+    type="text/css"
+    href="../CSS/chapters2.css" />
+    <link rel="stylesheet"
+      type="text/css"
+      href="../CSS/glitch.css" />
+  <link rel="icon"
+    href="../favicon.png" />
+
+  <script>
+    function w3IncludeHTML() {
+      var z, i, a, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        if (z[i].getAttribute("w3-include-html")) {
+          a = z[i].cloneNode(false);
+          file = z[i].getAttribute("w3-include-html");
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+              a.removeAttribute("w3-include-html");
+              a.innerHTML = xhttp.responseText;
+              z[i].parentNode.replaceChild(a, z[i]);
+              w3IncludeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <body onload="document.body.style.opacity='1'">
+    <nav id="navbar">
+      <img id ="icon" src="../favicon.png" />
+  <header id="special1">&lt;fiveEyes /&gt;</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="b1c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b1c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b1c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b1c4.html">Ch_04.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b1c5.html">Ch_05.txt</a>
+    </li>
+    <header id="special">The Hacker's Handbook</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="../bookTwo/b2c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookTwo/b2c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookTwo/b2c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookTwo/b2c4.html">Ch_04.txt</a>
+    </li>
+<br />
+    <div id="nav-flex">
+      <div class="links vibrate-3">
+        <a class="links" href="../index.html">~/Home_</a>
+      </div>
+      <div class="links vibrate-3">
+        <a class="links" href="../about.html">~/About_</a>
+      </div>
+    </div>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><p id="title">&lt;SURVEILLANCE_À_LA_MODE /&gt;</p></header>
+    <div class="article">
+    <article>
+      <p id="underheading">Easy. Breezy. <span class="glitch"
+          data-text="  [REDACTED]"></span></p>
+          <p><span class="first">I walked into work</span> the other day and found my boss hanging a funny-looking white and grey tube from the ceiling. </p>
+          <p>"What's that?" I asked him as I hurried to spot him on the ladder, holding my foot against the bottom bar for support. </p>
+          <p>"Not sure. We got it in the mail for free though, so I'm using it," he replied, pressing the tube into the ceiling tile and descending the ladder. "It's called Google Beacon or something, supposed to bring in more customers." </p>
+          <p>"Isn't that, like, the ‘best times to visit a place' thing on Google?" inquired Riley, my coworker, peering over the edge of her chair. She had been working on a customer's design and listening in to our conversation. I nodded, instantly
+            getting the gist of the little beacon now hanging from our ceiling. I'd heard of Google Guides, locals who would take pictures of a place and leave reviews to sway people one way or the other. It could make or break a business' reputation. </p>
+          <p>"I think it tracks phones linked to Google accounts," I said in a low tone, not wanting to seem like a know-it-all. </p>
+          <p>"It sends the information of the user's location, time of visit, and other stuff to Google, who logs it so that businesses can display information like the busiest hours of the day or reviews they receive. I mean, Google tracks you anyway with
+            or without a Beacon..." </p>
+          <p>"Okay, I'm turning my phone off now," said Riley, cutting me off before I could properly explain my distrust of location services. She turned around in her chair, broke off eye contact, and went back to her design work. I didn't see her turn
+            off her phone. </p>
+          <p>I find a lot of people don't mind the surveillance of these companies all that disconcerting; rather, more of a nuisance. It's called "complicit surveillance," used to label individuals who either aren't in the know about how much information
+            they're freely giving away or from individuals who know and just don't care. It's inconvenient to turn off your phone just to thwart Google. I agree. </p>
+          <p>Most of us by now know that we should avoid using basic passwords like <span class="changed">123456</span> and <span class="changed">qwerty</span>, and especially not to use the same password for everything. We know that we shouldn't share
+            private or embarrassing information on social media. We know there are apps we download and allow to see our contacts, access our phone's cameras and pictures, and that it's probably not very safe to give that access so freely. Yet, we continue
+            to do so. Why? </p>
+          <p>As humans we tend to turn the other way in the face of distasteful or painful decisions. I myself am guilty of finding two- factor authentication a pain, occasionally using Google services, and generally forgetting to turn on my VPN, which
+            hides my identity online. </p>
+          <p>This complacency accompanied by a heightened anxiety of knowing the truth has led to a rise of surveillance-flavored memes, including shining stars such as FBI man, NSA van, and the "birds aren't real" conspiracy. Unfortunately, all three
+            memes are steeped in truth. </p>
+          <p>During the Cold War, birds were trained as spies for the US Government (but for the record, birds are real). The NSA really does have vans patrolling the country—I've encountered one myself. And any security pro will tell you the government
+            and third parties are logging everything you do; in some cases, agents are actively watching you. </p>
+          <p>But the government isn't the only entity watching what you do. Data aggregators, or data mining systems owned by corporate companies, collect and sell your personal information to companies such as Google, Facebook, eBay, and others. </p>
+          <p>Acxiom, one of the four major data aggregators, collects information such as names, addresses, and phone numbers, as well as more sensitive information like what you browse for or buy on the internet, the car you own, what you order for
+            take-out over the phone, the history of any mental illnesses, your patterns of alcohol consumption, and much more. It's enough to make one's head spin, and yet the list continues on and on. </p>
+          <p>Transparent Lives, an advocacy website that aims to spread awareness about the extent of surveillance, says that the amount of information Acxiom held even before social media flourished was "roughly equivalent to a stack of King James Bibles
+            fifty thousand miles high." These are the databases of one sole aggregator--imagine three others just like it. Imagine hundreds, perhaps thousands of outlets that your private information is seeping into. </p>
+          <p>But what can we do about all this information? Is there a way to stop companies from stealing your private data? Can we put an end to the now-inherent anxiety of using technology and learn to properly use it? </p>
+          <p>Yes, but it isn't by sharing memes with our friends. </p>
+          <p>The Electronic Frontier Foundation and the Freedom of the Press Foundation are organizations created to give people the resources they need to fight this wave of anxiety and hopelessness. They help to give the power of information and choice
+            back to the individual, educating their readers and going as far as to physically represent the accused in court proceedings. </p>
+          <p>The EFF has had a hearty handful of big wins in the courtroom. In People v. Weaver, the EFF represented the people so that the police can't use GPS tracking on individuals without a warrant. In Doe v. 2TheMart.com the case was brought by the
+            EFF that the identities of 23 individuals in a chatroom be protected from exposure, arguing that anonymity online is a privacy concern. There are dozens of legal cases the EFF has represented in court; with their ambitious team of attorneys,
+            technologists, policy analysts, and network of volunteer activists, they really get 'er done. </p>
+          <p>Thanks to organizations like EFF, we as individuals can now have a clear, distinct voice in what happens with our information. There are people right now fighting for our right to free speech over the internet and our right to privacy via
+            technology. </p>
+          <p>We should no longer and can no longer tolerate turning the other way when we know there is something to be done about the issue. If you're interested in becoming a volunteer advocate for the EFF, they have plenty of opportunities for you to
+            get involved. Visit <a href="https://act.eff.org/">act.eff.org</a> and see what you can do today! </p>
+          <p>I'd like to switch gears now to introduce you to a group you might have heard of before.</p>
+  </div>
+  </div>
+    </article>
+  </div>
+  </section>
+</main>
+  <div w3-include-html="licenseSSI.html"></div>
+  <script>
+    w3IncludeHTML();
+  </script>
+</body>
+
+</html>

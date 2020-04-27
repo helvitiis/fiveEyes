@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>fiveEyes</title>
+  <link rel="stylesheet"
+    type="text/css"
+    href="../CSS/chapters2.css" />
+    <link rel="stylesheet"
+      type="text/css"
+      href="../CSS/glitch.css" />
+  <link rel="icon"
+    href="../favicon.png" />
+
+  <script>
+    function w3IncludeHTML() {
+      var z, i, a, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        if (z[i].getAttribute("w3-include-html")) {
+          a = z[i].cloneNode(false);
+          file = z[i].getAttribute("w3-include-html");
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+              a.removeAttribute("w3-include-html");
+              a.innerHTML = xhttp.responseText;
+              z[i].parentNode.replaceChild(a, z[i]);
+              w3IncludeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <body onload="document.body.style.opacity='1'">
+    <nav id="navbar">
+      <img id ="icon" src="../favicon.png" />
+  <header id="special1">&lt;fiveEyes /&gt;</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="b1c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b1c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b1c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b1c4.html">Ch_04.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="b1c5.html">Ch_05.txt</a>
+    </li>
+    <header id="special">The Hacker's Handbook</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="../bookTwo/b2c1.html">Ch_01.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookTwo/b2c2.html">Ch_02.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookTwo/b2c3.html">Ch_03.txt</a>
+    </li>
+    <li>
+      <a class="nav-link" href="../bookTwo/b2c4.html">Ch_04.txt</a>
+    </li>
+<br />
+    <div id="nav-flex">
+      <div class="links vibrate-3">
+        <a class="links" href="../index.html">~/Home_</a>
+      </div>
+      <div class="links vibrate-3">
+        <a class="links" href="../about.html">~/About_</a>
+      </div>
+    </div>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><p id="title">&lt;thwarting_big_brother /&gt;</p></header>
+    <div class="article">
+    <article>
+      <p id="underheading">How to live comfortably and securely.</p>
+      <p><span class="first">You’ve gotten this far.</span> Congratulations! Now what? Time to make some changes. First, realize that it’s possible to have fun and be safe at the same time. You can still use the internet and social media and email—I’m
+        not going to tell you to be a digital hermit, that’s just crazy.</p>
+      <p>I’ve outlined a list of things you can do to ease into protecting your privacy. Take these in stride—these steps aren’t going to fit everyone’s lifestyle, and you shouldn’t expect to be able to instantly adapt to a completely new lifestyle
+        instantaneously. This should be a gradual change and will require commitment. Here’s a beginner’s checklist just for you!</p>
+      <p class="infoHeader">My Security Checklist</p>
+      <div id="parentChecklist">
+        <div id="checklist">
+          <ul>
+            <li>Choose an Anonymous Browser</li>
+            <li>Use a VPN </li>
+            <li>Set Up Two-Factor Authentication </li>
+            <li>Buy a Security Key </li>
+            <li>Set Up a Secure Email </li>
+            <li>Install Ad Blockers </li>
+            <li>Use a Privacy-Respecting Search Engine </li>
+            <li>Download a Secure / Encrypted Messaging App </li>
+            <li>Get a Password Manager </li>
+            <li>Use a Pseudonym Online </li>
+            <li>Spread the Word!</li>
+          </ul>
+        </div>
+      </div>
+      <p>Now that you have a concrete checklist, let’s go over what each item means. (Please be aware that the steps listed in this guide will serve as a step in the right direction of protecting one’s privacy and should not be assumed to completely
+        erase a user’s tracks online.) I’ve followed a lot of software suggestions from the website privacytools.io which has gathered multiple products without endorsement or affiliation, so I’d recommend you check out their site for further
+        suggestions.</p>
+      <p class="header">Choose an Anonymous Browser</p>
+      <p>You probably have two browsers on your computer right now: Internet Explorer (Windows) or Safari (macOS) and Google Chrome. You probably exclusively use Chrome. Google collects everything you do, and any website is going to be able to track
+        your data with ease. Stop that. Make them work for it.</p>
+      <p>The Tor Project’s Tor browser will put an end to easy tracking. In a nutshell, the Tor system uses something called “onion routing” to bounce your computer’s signal from place to place within the secure Tor network around the world. It’ll make
+        it nearly impossible for anyone to find where you are while using Tor. Another user-friendly alternative is the Brave browser, which is what I personally use on a day-to-day basis. It’s based on Chrome with a privacy-oriented face and will make
+        the transition nearly seamless for religious Chrome users.</p>
+      <p class="header">Use a VPN</p>
+      <p>At one point or another you’ve probably heard of a “VPN.” What is it? What does it do? Do I really need one? VPN stands for Virtual Private Network, a kind of software that can be used to mask your online presence. VPNs like ProtonVPN,
+        NordVPN, Perfect Privacy, and Cryptostorm are user-friendly and easy to implement.</p>
+      <p>When choosing a VPN, you should take some things into account: the VPN provider should be centralized outside of the US so that the US government can’t seize the company’s data, should accept multiple ways of payment (Bitcoin is a more secure
+        form of payment than PayPal or a credit card), and should have a “no logging policy” where the company will not keep your identifying information on file. When signing up for their services, make certain that the VPN provider does not ask for
+        any kind of personal information other than a username, password, and valid email address. This is to protect you in the case of a data breach or seizure.</p>
+      <p>Please beware of VPNs that claim “complete anonymity” when using their services—this simply isn’t true. Using privacy services such as Tor listed above or a VPN does not mean you are 100% anonymous. Every product will log one or more points of
+        data that can ultimately be used to identify a user.</p>
+      <p class="header">Set Up Two-Factor Authentication</p>
+      <p>Here it is, the most annoying part of information security. 2FA or two-factor authentication confirms the identity of the user with another, separate piece of information. An example of 2FA is the Duo Mobile app, which can be downloaded onto
+        smart devices.</p>
+      <p>In a basic sense, 2FA requires authentication from two separate locations: a regular password and usually a secondary notification such as a call, text, or randomly generated code to input into the service being accessed.</p>
+      <p>Many online services offer the choice to login with 2FA such as Facebook, Twitter, Tumblr, and Instagram. There are a handful of helpful tutorials on how to implement 2FA on these platforms on the Web.</p>
+      <p class="header">Buy a Security Key</p>
+      <p>This one is for you folks who really like showing off in front of your friends and coworkers. Yubico, a company that manufactures the YubiKey product line, promises a tried and true balance of both security and ease-of-use. The YubiKey is a
+        hardware or physical key that is crush-resistant, waterproof, and is small enough to hang from a keychain or remain in your computer’s USB port.</p>
+      <p>Depending on which model you buy, the cheapest at $20 and the most expensive at $60, the steps needed to log in are simple: type in your regular username and password, then swipe or tap your finger on the surface of the key. Voilà! You’re now
+        logged in.</p>
+      <p>You can also use the YubiKey to log into a variety of services, even starting with the initial login to your computer. Online services such as Google, Dropbox, and Amazon allow use of the key, as well as Facebook and Twitter.</p>
+      <p>Finding the right product for your use is easy through the company’s website. You can visit yubico.com/quiz/ to take a short “quiz” which will recommend the perfect product to suit your needs.</p>
+      <p class="header">Set Up a Secure Email</p>
+      <p>DOWN WITH GMAIL! Chant it with me! If I could outlaw Google’s wretched email service I would, but unfortunately it seems like it’s here to stay. The reason Gmail is so terrible is because it skims through every message you send and receive and
+        creates a “shadow profile” of who you are, the things you like, and what kinds of ads would appeal to you the most. I sure hope no one with ill intent gets their hands on that information, because if they did they’d know practically everything
+        about you.</p>
+      <p>Here's a solution to avoiding that entirely: find a privacy- oriented email provider like ProtonMail, Disroot, or Mailfence, and create an account. I personally use ProtonMail and I love how polished its services are, as well as the ability to
+        use their app for my phone. When accessing your secure email, please be sure to use Tor or another anonymous browser configured for privacy.</p>
+      <p class="header">Install Ad Blockers</p>
+      <p>This one’s easy and only takes minutes, if that. Ad blockers... well, they do just that: they block ads, which is nice especially if you’re browsing the web or streaming YouTube videos. But why would I include ad blockers in a checklist for
+        privacy?</p>
+      <p>Ads, scripts, cookies, and third party trackers can all be used to track your browsing habits. Tiny or invisible images and scripts can be included in webpages for the sole purpose of tracking you—think of it like this: every time you visit a
+        country (a website) you have a passport (your computer). The authority (script) stamps your passport on arrival and leaves a mark on the page (cookie or other form of tracking). Thankfully, it’s possible to wipe cookies and other trackers as
+        well as to prevent them from ever sticking to you in the first place with free browser add-ons such as Privacy Badger and uBlock Origin.</p>
+      <p>Privacy Badger is an app developed by the Electronic Frontier Foundation that “automatically analyzes and blocks any tracker or ad that violates the principle of user consent, ... functions well without any ... configuration by the user, ...
+        [is] produced by an organization that is unambiguously working for its users rather than for advertisers, and uses algorithmic methods to decide what is and isn't tracking.” Fancy speak for “this shit works, yo.”</p>
+      <p>Tl;dr: download an ad blocker. There’s no downside to them and you’ll never have to worry about touching them again.</p>
+      <p class="header">Use a Privacy-Respecting Search Engine</p>
+      <p>Here I am again about to rip another one for Google services. Google is notorious for tracking your searches and logging your data. The reason Google services such as Gmail are free is because Google is actively monetizing your data. Begin to
+        use more privacy-oriented alternatives to the most popular search engine such as StartPage, DuckDuckGo, Searx, and Gibiru.</p>
+      <p>I personally use DuckDuckGo because I prefer its Google- like interface—it’s an easy switch from Google’s platform and it’s hard to tell the difference between the two once you begin using it every day.</p>
+      <p class="header">Download a Secure / Encrypted Messaging App</p>
+      <p>I’ve decided that no one is going to read my text messages except for myself and the person receiving them. Thanks to an app called Signal, complete privacy is possible!</p>
+      <p>Signal is an app available on both Android and iPhone devices as well as desktop. It works just like any messaging app you have and is just as easy to set up and use as, say, Facebook Messenger or Skype. The best part of Signal is that every
+        message sent using the app is encrypted, which means the only people that can open and see the message is yourself and the intended recipient.</p>
+      <p>Signal has gotten a thumbs up from Edward Snowden himself as well as several other prominent members of the information and computer security world. Try it out! I use it exclusively as my messaging app.</p>
+      <p class="header">Get a Password Manager</p>
+      <p>Have a shit memory like I do? Get someone else to remember everything for you. Introducing password managers, the greatest invention since the sticky note. Password managers like KeePass or LastPass will store every one of your passwords so
+        that you never have to remember them again. You can access the password bank with a single master password.</p>
+      <p class="header">Use a Pseudonym Online</p>
+      <p>This one’s pretty straightforward. When you sign up for your spam email or your finsta or whatever it is you do online, use a fake name to keep yourself covered. The less you use your real name online, the smaller your digital footprint will
+        be. Plus, who doesn’t like a little creativity? Go wild.</p>
+      <p class="header">Spread the Word!</p>
+      <p>Here’s the last piece of advice I’d like to give. The only way anything is going to change is if enough people become aware of what’s going on and motivated enough to do something about it. I can’t imagine a world where people wouldn’t use
+        their voices to stand up for their rights, especially something so invasive and blatantly wrong.</p>
+      <p>The lack of awareness is what’s holding back policy changes. A lot of people will look at the issues of information privacy and think “who cares?” or “I don’t have anything to hide. Only bad people have things to hide.” Teaching our peers is
+        the only way we’ll progress in this ever more technology-dependent society.</p>
+  </div>
+  </div>
+    </article>
+  </div>
+  </section>
+</main>
+  <div w3-include-html="licenseSSI.html"></div>
+  <script>
+    w3IncludeHTML();
+  </script>
+</body>
+
+</html>
